@@ -19,7 +19,7 @@ const int White = 16;
 const int Black = 8;
 float random() { return 2*(rand()/float(RAND_MAX))-1; }
 float random2() { return (rand()/float(RAND_MAX)); }
-
+float ReLU(float x){return x>0? x:0.0;} 
 float dReLU(float x) {return x>float(0) ? float(1):float(0);}
 void printArr(int n, float arr[])
 {
